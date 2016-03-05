@@ -312,7 +312,7 @@ var print = td.function()
 
 print('some', 'stuff', 'out', 'like', 8)
 
-td.verify(print()) // throws, missng all arguments
+td.verify(print()) // throws, missing all arguments
 td.verify(print(), {ignoreExtraArgs: true}) // passes
 td.verify(print('some'), {ignoreExtraArgs: true}) // passes
 td.verify(print('some', 'stuff'), {ignoreExtraArgs: true}) // passes
